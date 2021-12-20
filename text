@@ -1,0 +1,10 @@
+import pyupbit
+import numpy as np
+
+access = "Rv0OORJattyUNgv5MXx3AQMg9wB0uKyg60lqBbhD"          # 본인 값으로 변경
+secret = "luCKclTxDHvlW9352IogkYnPh5LzlBZeoGzrvmd1"          # 본인 값으로 변경
+upbit = pyupbit.Upbit(access, secret)
+
+print(upbit.get_balance("KRW-BTC"))     # KRW-XRP 조회
+print(upbit.get_balance("KRW"))         # 보유 현금 조회
+# change
